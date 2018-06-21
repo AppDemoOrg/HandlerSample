@@ -1,10 +1,11 @@
-package com.abt.handler;
+package com.abt.handler.sample;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 
+import com.abt.handler.R;
 import com.orhanobut.logger.Logger;
 
 /**

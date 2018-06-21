@@ -14,7 +14,7 @@ import com.orhanobut.logger.Logger;
  */
 public class MainActivity extends AppCompatActivity {
 
-    Handler mHandler = new Handler(new Handler.Callback() {
+    private final Handler mHandler = new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(Message msg) {
             Logger.d("msg.what"+msg.what);

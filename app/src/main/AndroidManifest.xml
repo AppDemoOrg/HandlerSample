@@ -15,18 +15,16 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity android:name=".memory_leak.LeakActivity">
+        </activity>
+
+        <activity android:name=".memory_leak.UnLeakActivity">
+        </activity>
+
+        <activity android:name=".sample.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <activity android:name=".memory_leak.UnLeakActivity">
-
-        </activity>
-
-        <activity android:name=".sample.MainActivity">
-
         </activity>
 
     </application>

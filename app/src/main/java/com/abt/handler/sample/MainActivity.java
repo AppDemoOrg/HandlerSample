@@ -19,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean handleMessage(Message msg) {
             Logger.d("msg.what"+msg.what);
+//            try {
+//                Thread.sleep(2000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
             return false;
         }
     });
@@ -33,19 +38,24 @@ public class MainActivity extends AppCompatActivity {
         mHandler.sendMessage(msg);
         Logger.d("send msg0.");
 
+//        msg = Message.obtain();
+//        msg.what = 1;
+//        mHandler.sendMessage(msg);
+//        Logger.d("send msg1.");
+
         msg = Message.obtain();
         msg.what = 1;
-        mHandler.sendMessageDelayed(msg, 10*1000);
-        Logger.d("send msg1 delay 10 second.");
+        mHandler.sendMessageDelayed(msg, 4*1000);
+        Logger.d("send msg1 delay 4 second.");
 
         msg = Message.obtain();
         msg.what = 2;
-        mHandler.sendMessageDelayed(msg, 5*1000);
-        Logger.d("send msg2 delay 5 second.");
+        mHandler.sendMessageDelayed(msg, 2*1000);
+        Logger.d("send msg2 delay 2 second.");
 
         try {
             Logger.d("start to sleep.");
-            Thread.sleep(15*1000);
+            Thread.sleep(6*1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
